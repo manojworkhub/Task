@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="section-for-product">
+      <div class="base">
+        <div class="imgslide">
+          <div class="mainIMG">
+            <div class="container">
+              <!-- main images -->
+              <div class="holder">
+                <div class="slides">
+                  <img class="img1" src="./img/img1.jpg" alt="image one" />
+                </div>
+
+                <div class="slides">
+                  <img class="img2" src="./img/img2.jpg" alt="image 2" />
+                </div>
+
+                <div class="slides">
+                  <img class="img3" src="./img/img3.jpg" alt="image 3" />
+                </div>
+
+                <div class="slides">
+                  <img class="img4" src="./img/img4.jpg" alt="image 4" />
+                </div>
+              </div>
+
+              <!-- thumnails in a row -->
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="slide-thumbnail"
+                    src="./img/img1.jpg"
+                    onclick="currentSlide(1)"
+                    alt="Caption One"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="slide-thumbnail"
+                    src="./img/img2.jpg"
+                    onclick="currentSlide(2)"
+                    alt="Caption Two"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="slide-thumbnail"
+                    src="./img/img3.jpg"
+                    onclick="currentSlide(3)"
+                    alt="Caption Three"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="slide-thumbnail"
+                    src="./img/img4.jpg"
+                    onclick="currentSlide(4)"
+                    alt="Caption Four"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="wordslide">
+          <div class="content">
+            <div class="title-base">
+              <p id="vendor"></p>
+              <h1 id="showdata"></h1>
+            </div>
+            <div class="price-base">
+            <div class="rate">
+              <h1 id="price"></h1>
+              <p>35% off</p>
+            </div>
+            <p id="compare_at_price"></p>
+          </div>
+          </div>
+          <div class="color">
+            <p>choose a color</p>
+
+            <div class="selectCOLOR">
+             
+              <input type="radio" id="Yellow" name="dresscolor" value="Yellow" />
+
+              <input type="radio" id="Green" name="dresscolor" value="Green" />
+
+              <input type="radio" id="Blue" name="dresscolor" value="Blue" />
+
+              <input type="radio" id="Pink" name="dresscolor" value="Pink" />
+            </div>
+          </div>
+          <div class="size">
+            <p>chosse a size</p>
+            <div class="selectSIZE">
+              <div>
+                <input type="radio" name="sizes" id="small" />
+                <label for="small" class="sizeOFdressS"></label>
+              </div>
+              <div>
+                <input type="radio" name="sizes" id="Medium" />
+                <label for="Medium" class="sizeOFdressM"></label>
+              </div>
+              <div>
+                <input type="radio" name="sizes" id="Large" />
+                <label for="Large" class="sizeOFdressL"></label>
+              </div>
+              <div>
+                <input type="radio" name="sizes" id="Extralarge" />
+                <label for="Extralarge" class="sizeOFdressEL"></label>
+              </div>
+              <div>
+                <input type="radio" name="sizes" id="XXL" />
+                <label for="XXL" class="sizeOFdressXXL"></label>
+              </div>
+            </div>
+          </div>
+          <div class="Qbutton-base">
+          <div class="Qbutton">
+            <div class="quantity-button">
+              <div class="input-group">
+                <button id="decrement">-</button>
+                <input type="number" id="input" value="0" max="20" readonly />
+                <button id="increment">+</button>
+              </div>
+            </div>
+
+            <div class="ADDtoCart-button">
+              <button class="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  height="24"
+                  fill="none"
+                  class="svg-icon"
+                >
+                  <g stroke-width="2" stroke-linecap="round" stroke="#fff">
+                    <rect y="5" x="4" width="16" rx="2" height="16"></rect>
+                    <path d="m8 3v4"></path>
+                    <path d="m16 3v4"></path>
+                    <path d="m4 11h16"></path>
+                  </g>
+                </svg>
+                <span class="lable">Add to Cart</span>
+              </button>
+            </div>
+          </div>
+          <div class="notes">
+            <h6>
+              Embrace Sideboard with Color Yellow and Size Small added to cart
+            </h6>
+          </div>
+        </div>
+          <div class="description">
+            <p id="description"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./app.js"></script>
+</html>
